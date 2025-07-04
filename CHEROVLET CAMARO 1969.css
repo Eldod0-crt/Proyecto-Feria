@@ -1,0 +1,78 @@
+body {
+    background-color: #000000; /* Fondo negro */
+    color: #f8f9fa; /* Color de texto general para contraste con el fondo negro */
+}
+
+/* Aplicar fuente Roboto a todos los encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif; /* Usamos Roboto como fuente principal */
+    color: #dc3545; /* Rojo clásico de Bootstrap para 'danger' */
+}
+
+/* También puedes aplicar Roboto a elementos que actúen como subtítulos si lo deseas */
+.lead {
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0; /* Un gris claro para el texto de los párrafos */
+}
+
+p {
+    color: #e0e0e0; /* Un gris claro para el texto de los párrafos */
+}
+
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.7); /* Mantiene el fondo de imagen del jumbotron, pero con una capa oscura */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.card {
+    background-color: #212529; /* Un gris muy oscuro, casi negro, para el fondo de las tarjetas */
+    color: #f8f9fa; /* Texto claro por defecto para las tarjetas */
+    border: 1px solid #495057; /* Un borde gris más notorio para definirlas */
+    box-shadow: 0 0.5rem 1rem rgba(220, 53, 69, 0.2); /* Sombra sutil con un toque rojo para combinar */
+}
+
+.card-title {
+    color: #ffc107; /* Amarillo dorado de Bootstrap para 'warning', combina bien con el negro y rojo */
+    font-family: 'Roboto', sans-serif; /* También Roboto para el título de la tarjeta */
+}
+
+.list-group-item {
+    background-color: #2c3034; /* Un tono ligeramente más claro que el fondo de la tarjeta para los ítems de lista */
+    color: #f8f9fa; /* Texto claro para elementos de lista */
+    border-color: #495057; /* Borde sutil */
+}
+
+/* --- Cambios específicos para la Ficha Técnica --- */
+
+/* Títulos de las cabeceras de la tarjeta de la ficha técnica */
+/* Los títulos de las cabeceras de las tarjetas (h4 dentro de card-header) ya están en blanco por bg-primary/bg-danger,
+   y combinan bien. Les aseguramos la fuente Roboto. */
+.card-header h4 {
+    font-family: 'Roboto', sans-serif; /* Fuente Roboto para los títulos de las cabeceras de las tarjetas */
+    /* El color ya se maneja por las clases bg-primary y bg-danger de Bootstrap, que ponen el texto en blanco */
+}
+
+/* Texto de la ficha técnica (dentro de los list-group-item) */
+.list-group-item {
+    /* Mantenemos el fondo oscuro para la legibilidad con el fondo principal negro */
+    background-color: #2c3034;
+    /* Color de texto para la ficha técnica:
+       Para mantener la legibilidad sobre el fondo oscuro, se usa blanco/gris claro.
+       Si en el futuro cambias el fondo de la tarjeta a CLARO, cambia este a:
+       color: #000000; // NEGRO
+    */
+    color: #f8f9fa; /* Blanco/Gris claro para legibilidad en fondo oscuro */
+    border-color: #495057;
+}
+
+.list-group-item strong {
+    color: #17a2b8; /* Azul cian para el texto resaltado, buen contraste */
+}
+
+
+/* Estilo específico para los títulos de sección que usaste */
+.section-title {
+    font-family: 'Roboto', sans-serif; /* Roboto para los títulos de sección */
+    color: #dc3545 !important; /* Asegura que estos títulos también sean rojos, ¡important para anular otros estilos! */
+}

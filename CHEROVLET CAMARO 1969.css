@@ -74,5 +74,5 @@ p {
 /* Estilo específico para los títulos de sección que usaste */
 .section-title {
     font-family: 'Roboto', sans-serif; /* Roboto para los títulos de sección */
-    color: #dc3545 !important; /* Asegura que estos títulos también sean rojos, ¡important para anular otros estilos! */
+    color: #d63545 !important; /* Asegura que estos títulos también sean rojos, ¡important para anular otros estilos! */
 }
